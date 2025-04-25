@@ -1,32 +1,43 @@
-const navLinks = [
-  {
-    name: "Work",
-    link: "#work",
-  },
-  {
-    name: "Experience",
-    link: "#experience",
-  },
-  {
-    name: "Skills",
-    link: "#skills",
-  },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
-  },
-];
+const navLinks = {
+  en: [
+    { name: "About me", link: "#aboutme" },
+    { name: "Skills", link: "#skills" },
+    { name: "Work", link: "#work" },
+    // { name: "Experience", link: "#experience" },
+    
+  ],
+  es: [
+    { name: "Sobre Mi", link: "#aboutme" },
+    { name: "Habilidades", link: "#skills" },
+    { name: "Proyectos", link: "#work" },
+    // { name: "Experiencia", link: "#experience" },
+    
+  ],
+};
 
-const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-];
+const words = {
+  en: [
+    { text: "Ideas", imgPath: "/images/ideas.svg" },
+    { text: "Dreams", imgPath: "/images/concepts.svg" },
+    { text: "Designs", imgPath: "/images/designs.svg" },
+    { text: "Code", imgPath: "/images/code.svg" },
+    { text: "Ideas", imgPath: "/images/ideas.svg" },
+    { text: "Dreams", imgPath: "/images/concepts.svg" },
+    { text: "Designs", imgPath: "/images/designs.svg" },
+    { text: "Code", imgPath: "/images/code.svg" },
+  ],
+  es: [
+    { text: "Ideas", imgPath: "/images/ideas.svg" },
+    { text: "Sueños", imgPath: "/images/concepts.svg" },
+    { text: "Diseños", imgPath: "/images/designs.svg" },
+    { text: "Código", imgPath: "/images/code.svg" },
+    { text: "Ideas", imgPath: "/images/ideas.svg" },
+    { text: "Sueños", imgPath: "/images/concepts.svg" },
+    { text: "Diseños", imgPath: "/images/designs.svg" },
+    { text: "Código", imgPath: "/images/code.svg" },
+  ]
+};
+
 
 const counterItems = [
   { value: 15, suffix: "+", label: "Years of Experience" },
@@ -37,57 +48,87 @@ const counterItems = [
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    imgPath: "/images/logos/html.jpeg",
+    height: "50%",
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    imgPath: "/images/logos/css.png",
+    height: "40%",
+    
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    imgPath: "/images/logos/javascript.png",
+    height: "70%",
+    
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    imgPath: "/images/logos/react.png",
+    height: "45%",
+    
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    imgPath: "/images/logos/reactbootstrap.png",
+    height: "45%",
+    
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    imgPath: "/images/logos/node.png",
+    height: "90%",
+    
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    imgPath: "/images/logos/mysql.png",
+    height: "90%",
+    
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    imgPath: "/images/logos/mongodb.png",
+    height: "90%",
+    
   },
   {
     imgPath: "/images/logos/company-logo-9.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-10.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-11.png",
+    height: "90%",
+    
   },
 ];
 
-const abilities = [
-  {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
-  },
-  {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
-  },
-  {
-    imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
-  },
-];
+const abilities = {
+  en: [
+    {
+      imgPath: "/images/seo.png",
+      title: "Quality Focus",
+      desc: "Delivering high-quality results while maintaining attention to every detail.",
+    },
+    {
+      imgPath: "/images/chat.png",
+      title: "Reliable Communication",
+      desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    },
+    {
+      imgPath: "/images/time.png",
+      title: "On-Time Delivery",
+      desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    },
+  ],
+  es: [
+    {
+      imgPath: "/images/seo.png",
+      title: "Enfoque en la Calidad",
+      desc: "Entregando resultados de alta calidad con atención a cada detalle.",
+    },
+    {
+      imgPath: "/images/chat.png",
+      title: "Comunicación Confiable",
+      desc: "Mantenete al tanto en cada paso para asegurar transparencia y claridad.",
+    },
+    {
+      imgPath: "/images/time.png",
+      title: "Entrega Puntual",
+      desc: "Asegurando que los proyectos se completen a tiempo, con calidad y detalle.",
+    },
+  ],
+};
 
 const techStackImgs = [
   {
@@ -199,6 +240,49 @@ const expLogos = [
   },
 ];
 
+const aboutmeText = {
+  en: {
+    title: "About me",
+    subtitle: "🎶🧉Mate, music, and a thousand lines of code (or bugs, depending on the day).🎶🧉",
+    description: ["Hey there! I'm Adriana Brandan, 35 years old, from Buenos Aires, Argentina. I'm currently studying Programming at UTN Avellaneda, and since I discovered coding, I’ve been diving into every course I can find to explore the vast world of tech.","I’ve completed Full Stack Python (Codo a Codo) and Full Stack React/Node.js (Academia Numen), and right now I’m vibing with front-end development — there's something magical about turning ideas into interactive interfaces.","I’ve also dabbled in data analysis with Python (Pandas, Seaborn, NumPy), and built desktop apps using Tkinter and CustomTkinter. While I don’t have professional IT experience yet, I’m super excited to start my journey and grow by learning from mentors, teammates, and real projects.","I believe in staying curious, working with passion, and keeping things real — always with some good music in the background."]
+    
+  },
+  es: {
+    title: "Sobre mí",
+    subtitle: "🎶🧉Mate, música y mil líneas de código (o bugs, depende el día).🎶🧉",
+    description: ["¡Hola! Soy Adriana Brandan, tengo 35 años y soy de Buenos Aires. Estudio Tecnicatura en Programación en la UTN de Avellaneda y, desde que arranqué en este mundo, no paré de explorar.","Hice cursos como Full Stack Python (Codo a Codo) y Full Stack con React y Node.js (Academia Numen), y siempre que puedo me meto en algún nuevo curso para seguir descubriendo qué camino quiero tomar. Hoy por hoy, el front-end me viene llamando fuerte: me gusta ver cómo el código cobra vida en pantalla.","También experimenté con análisis de datos en Python (Pandas, Seaborn, NumPy) y apps de escritorio con Tkinter y CustomTkinter. Aunque todavía no tengo experiencia en el mundo IT, tengo muchas ganas de arrancar, meter manos en proyectos reales y seguir aprendiendo de colegas, mentores y la comunidad.","Soy de las que creen que con actitud, constancia y buena onda se puede llegar lejos… y si es con buena música de fondo, ¡mejor!"]
+    
+  },
+};
+
+
+const skillsText = {
+  en: {
+    title: "My Skills",
+    subtitle: "🎸 Evolving with attitude. 🚀",
+    
+  },
+  es: {
+    title: "Mis Habilidades",
+    subtitle: "🎸 Evolucionando con actitud. 🚀",
+    
+  },
+};
+
+
+const proyectText = {
+  en: {
+    title: "My Projects",
+    subtitle: "💼💡 Design, logic, and a little bit of magic. ✨",
+    
+  },
+  es: {
+    title: "Mis Proyectos",
+    subtitle: "💼💡 Diseño, lógica y un poco de magia. ✨",
+    
+  },
+};
+
 const testimonials = [
   {
     name: "Esther Howard",
@@ -246,22 +330,104 @@ const testimonials = [
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
+    name: "github",
+    imgPath: "images/github.png",
+    url:"https://github.com/AdriBrandy"
   },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
+    name: "mail",
+    imgPath: "/images/mail.png",
+    url: "mailto:adriana_brandan22@outlook.com"
   },
   {
-    name: "x",
-    imgPath: "/images/x.png",
+    name: "what",
+    imgPath: "/images/whatsapp.png",
+    url: "https://wa.me/5491164258475?text=Hola%20Brandy%2C%20vi%20tu%20portfolio%20y%20me%20encant%C3%B3.%20%C2%BFPodemos%20hablar%3F"
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/adriana-brandan/"
   },
 ];
+const translations = {
+  en: {
+    terms: "Terms & Conditions",
+    copyright: "All rights reserved.",
+  },
+  es: {
+    terms: "Términos y Condiciones",
+    copyright: "Todos los derechos reservados.",
+  },
+};
+
+const projectsinfo = [
+  {
+    id: 1,
+    imgPath: "/images/calculadora-portada.png",
+    title: {
+      es: "Calculadora hecha con Custom Tkinter",
+      en: "Calculator built with Custom Tkinter",
+    },
+    description: {
+      es: "App de escritorio que permite realizar operaciones bàsicas, realizada con la librerìa de Python.",
+      en: "Desktop app that allows basic operations, built with Python's library.",
+    },
+    repo: "https://github.com/AdriBrandy/Calculadora",
+    demo: "https://youtube.com/shorts/Ld3l0-aFr9A?feature=share",
+    className:"w-full h-full object-cover"
+  },
+  {
+    id: 2,
+    imgPath: "/images/inventario-portada.png",
+    title: {
+      es: "Inventario hecho con Tkinter",
+      en: "Inventory built with Tkinter.",
+    },
+    description: {
+      es: "App de escritorio, CRUD conectado a una Base de Datos en MySQL",
+      en: "Desktop app with CRUD functionality connected to a MySQL database.",
+    },
+    repo: "https://github.com/AdriBrandy/TP-Inventario",
+    demo: "https://youtu.be/QETirvhsqfs",
+    className:"w-full h-full object-cover",
+   
+  },
+  // {
+  //   id: 3,
+  //   imgPath: "/images/inventario-portada.png",
+  //   title: {
+  //     es: "Inventario hecho con Tkinter",
+  //     en: "Inventory built with Tkinter.",
+  //   },
+  //   description: {
+  //     es: "App de escritorio, CRUD conectado a una Base de Datos en MySQL",
+  //     en: "Desktop app with CRUD functionality connected to a MySQL database.",
+  //   },
+  //   repo: "https://github.com/AdriBrandy/TP-Inventario",
+  //   demo: "https://youtu.be/QETirvhsqfs",
+  //   className:"w-full h-full object-cover",
+  // },
+  // {
+  //   id: 4,
+  //   imgPath: "/images/inventario-portada.png",
+  //   title: {
+  //     es: "Inventario hecho con Tkinter",
+  //     en: "Inventory built with Tkinter.",
+  //   },
+  //   description: {
+  //     es: "App de escritorio, CRUD conectado a una Base de Datos en MySQL",
+  //     en: "Desktop app with CRUD functionality connected to a MySQL database.",
+  //   },
+  //   repo: "https://github.com/AdriBrandy/TP-Inventario",
+  //   demo: "https://youtu.be/QETirvhsqfs",
+  //   className:"w-full h-full object-cover",
+  // },
+  // Agregás más proyectos igual
+];
+
+
+
 
 export {
   words,
@@ -270,9 +436,14 @@ export {
   counterItems,
   expCards,
   expLogos,
+  aboutmeText,
+  skillsText,
+  proyectText,
   testimonials,
   socialImgs,
   techStackIcons,
   techStackImgs,
   navLinks,
+  translations,
+  projectsinfo,
 };
