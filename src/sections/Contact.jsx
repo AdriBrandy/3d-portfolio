@@ -1,8 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-
 import TitleHeader from "../components/TitleHeader";
-import ContactExperience from "../components/models/contact/ContactExperience";
+
 const contactText = {
   en: {
     title: "Get in Touch – Let’s Connect",
@@ -81,92 +80,14 @@ const Contact = ({ language = "es" }) => {
           sub={contactText[language].subtitle}
           title={contactText[language].title}
         />
-        {/* <div className="grid-12-cols m-10">
-          <div className="xl:col-span-5">
-            <div className="flex-center card-border rounded-xl p-5">
-              <form
-                ref={formRef}
-                onSubmit={handleSubmit}
-                className="w-full flex flex-col gap-1"
-              >
-                <div>
-                  <label htmlFor="name">
-                    {contactText[language].nameLabel}
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={form.name}
-                    onChange={handleChange}
-                    placeholder={contactText[language].namePlaceholder}
-                    required
-                  />
-                </div>
 
-                <div>
-                  <label htmlFor="email">
-                    {contactText[language].emailLabel}
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={form.email}
-                    onChange={handleChange}
-                    placeholder={contactText[language].emailPlaceholder}
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="message">
-                    {contactText[language].messageLabel}
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={form.message}
-                    onChange={handleChange}
-                    placeholder={contactText[language].messagePlaceholder}
-                    rows="5"
-                    required
-                  />
-                </div>
-
-                <button type="submit">
-                  <div className="cta-button group">
-                    <div className="bg-circle" />
-                    <p className="text">
-                      {loading
-                        ? contactText[language].sending
-                        : sent
-                        ? "✅ Enviado"
-                        : contactText[language].send}
-                    </p>
-
-                    <div className="arrow-wrapper">
-                      <img src="/images/arrow-down.svg" alt="arrow" />
-                    </div>
-                  </div>
-                </button>
-              </form>
-            </div>
-          </div>
-          <div className="xl:col-span-5 max-h-120">
-            <div className="bg-[#D6F7F4] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-              <ContactExperience />
-            </div>
-          </div>
-        </div> */}
-        <div className="flex flex-col md:flex-row justify-center items-start gap-6 md:gap-10 mt-10 max-w-screen-md mx-auto">
-          {/* Formulario */}
+        <div className="flex flex-col md:flex-row justify-center items-start gap-6 md:gap-10 mt-5 max-w-screen-md mx-auto">
           <div className="w-full md:w-1/2">
-            <div className="card-border rounded-xl p-5">
+            <div className="card-border rounded-xl p-2">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
-                className="w-full flex flex-col gap-4"
+                className="w-full flex flex-col gap-2"
               >
                 <div>
                   <label htmlFor="name">
@@ -235,13 +156,8 @@ const Contact = ({ language = "es" }) => {
             </div>
           </div>
 
-          {/* Visual o modelo interactivo */}
-          <div className="w-full md:w-1/2">
-            <div className="bg-[#D6F7F4] w-full max-h-118 hover:cursor-grab rounded-3xl overflow-hidden">
-              <ContactExperience />
-            </div>
-          </div>
         </div>
+          
       </div>
     </section>
   );

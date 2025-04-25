@@ -6,7 +6,7 @@ const Cardme = () => {
     <StyledWrapper>
       <div className="card">
         <div className="card-photo">
-          <img src="/public/images/yo.jpeg"></img>
+          <img src="images/yo.jpeg"></img>
         </div>
 
         <div className="card-title">
