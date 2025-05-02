@@ -393,21 +393,20 @@ const projectsinfo = [
     className:"w-full h-full object-cover",
    
   },
-  // {
-  //   id: 3,
-  //   imgPath: "/images/inventario-portada.png",
-  //   title: {
-  //     es: "Inventario hecho con Tkinter",
-  //     en: "Inventory built with Tkinter.",
-  //   },
-  //   description: {
-  //     es: "App de escritorio, CRUD conectado a una Base de Datos en MySQL",
-  //     en: "Desktop app with CRUD functionality connected to a MySQL database.",
-  //   },
-  //   repo: "https://github.com/AdriBrandy/TP-Inventario",
-  //   demo: "https://youtu.be/QETirvhsqfs",
-  //   className:"w-full h-full object-cover",
-  // },
+  {
+    id: 3,
+    imgPath: "/images/skillboost-academy.png",
+    title: {
+      es: "Ecommerce React MERN.",
+      en: "Ecommerce React MERN.",
+    },
+    description: {
+      es: "Aplicación web de e-commerce. Frontend: ReactJS + TailwindCSS, Backend: Node.js + Express, Base de datos: MongoDB (con Mongoose), Control de estado: Context API, Deploy: Vercel (frontend) + Render (backend/API) ",
+      en: "Web e-commerce application. Frontend: ReactJS + TailwindCSS, Backend: Node.js + Express, Database: MongoDB (with Mongoose),State management: Context API, Deployment: Vercel (frontend) + Render (backend/API)"   },
+    repo: "https://github.com/AdriBrandy/frontend-ecommerce",
+    demo: "https://youtu.be/dr3UT7qaRLA",
+    className:"w-full h-full object-cover",
+  },
   // {
   //   id: 4,
   //   imgPath: "/images/inventario-portada.png",
