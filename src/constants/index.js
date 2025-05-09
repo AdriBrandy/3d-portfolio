@@ -4,14 +4,12 @@ const navLinks = {
     { name: "Skills", link: "#skills" },
     { name: "Work", link: "#work" },
     // { name: "Experience", link: "#experience" },
-    
   ],
   es: [
     { name: "Sobre Mi", link: "#aboutme" },
     { name: "Habilidades", link: "#skills" },
     { name: "Proyectos", link: "#work" },
     // { name: "Experiencia", link: "#experience" },
-    
   ],
 };
 
@@ -35,9 +33,8 @@ const words = {
     { text: "Sueños", imgPath: "/images/concepts.svg" },
     { text: "Diseños", imgPath: "/images/designs.svg" },
     { text: "Código", imgPath: "/images/code.svg" },
-  ]
+  ],
 };
-
 
 const counterItems = [
   { value: 15, suffix: "+", label: "Years of Experience" },
@@ -54,42 +51,34 @@ const logoIconsList = [
   {
     imgPath: "/images/logos/css.png",
     height: "40%",
-    
   },
   {
     imgPath: "/images/logos/javascript.png",
     height: "70%",
-    
   },
   {
     imgPath: "/images/logos/react.png",
     height: "45%",
-    
   },
   {
     imgPath: "/images/logos/reactbootstrap.png",
     height: "45%",
-    
   },
   {
     imgPath: "/images/logos/node.png",
     height: "90%",
-    
   },
   {
     imgPath: "/images/logos/mysql.png",
     height: "90%",
-    
   },
   {
     imgPath: "/images/logos/mongodb.png",
     height: "90%",
-    
   },
   {
     imgPath: "/images/logos/company-logo-9.png",
     height: "90%",
-    
   },
 ];
 
@@ -188,7 +177,8 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review:
+      "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
     title: "Frontend Developer",
@@ -200,7 +190,8 @@ const expCards = [
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review:
+      "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     title: "Full Stack Developer",
@@ -212,7 +203,8 @@ const expCards = [
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review:
+      "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
     title: "React Native Developer",
@@ -243,45 +235,60 @@ const expLogos = [
 const aboutmeText = {
   en: {
     title: "About me",
-    subtitle: "🎶🧉Mate, music, and a thousand lines of code (or bugs, depending on the day).🎶🧉",
-    description: ["Hey there! I'm Adriana Brandan, 35 years old, from Buenos Aires, Argentina. I'm currently studying Programming at UTN Avellaneda, and since I discovered coding, I’ve been diving into every course I can find to explore the vast world of tech.","I’ve completed Full Stack Python (Codo a Codo) and Full Stack React/Node.js (Academia Numen), and right now I’m vibing with front-end development — there's something magical about turning ideas into interactive interfaces.","I’ve also dabbled in data analysis with Python (Pandas, Seaborn, NumPy), and built desktop apps using Tkinter and CustomTkinter. While I don’t have professional IT experience yet, I’m super excited to start my journey and grow by learning from mentors, teammates, and real projects.","I believe in staying curious, working with passion, and keeping things real — always with some good music in the background."]
-    
+    subtitle:
+      "🎶🧉Mate, music, and a thousand lines of code (or bugs, depending on the day).🎶🧉",
+    description: [
+      "Hey there! I'm Adriana Brandan, 35 years old, from Buenos Aires, Argentina. I'm currently studying Programming at UTN Avellaneda, and since I discovered coding, I’ve been diving into every course I can find to explore the vast world of tech.",
+      "I’ve completed Full Stack Python (Codo a Codo) and Full Stack React/Node.js (Academia Numen), and right now I’m vibing with front-end development — there's something magical about turning ideas into interactive interfaces.",
+      "I’ve also dabbled in data analysis with Python (Pandas, Seaborn, NumPy), and built desktop apps using Tkinter and CustomTkinter. While I don’t have professional IT experience yet, I’m super excited to start my journey and grow by learning from mentors, teammates, and real projects.",
+      "I believe in staying curious, working with passion, and keeping things real — always with some good music in the background.",
+    ],
   },
   es: {
     title: "Sobre mí",
-    subtitle: "🎶🧉Mate, música y mil líneas de código (o bugs, depende el día).🎶🧉",
-    description: ["¡Hola! Soy Adriana Brandan, tengo 35 años y soy de Buenos Aires. Estudio Tecnicatura en Programación en la UTN de Avellaneda y, desde que arranqué en este mundo, no paré de explorar.","Hice cursos como Full Stack Python (Codo a Codo) y Full Stack con React y Node.js (Academia Numen), y siempre que puedo me meto en algún nuevo curso para seguir descubriendo qué camino quiero tomar. Hoy por hoy, el front-end me viene llamando fuerte: me gusta ver cómo el código cobra vida en pantalla.","También experimenté con análisis de datos en Python (Pandas, Seaborn, NumPy) y apps de escritorio con Tkinter y CustomTkinter. Aunque todavía no tengo experiencia en el mundo IT, tengo muchas ganas de arrancar, meter manos en proyectos reales y seguir aprendiendo de colegas, mentores y la comunidad.","Soy de las que creen que con actitud, constancia y buena onda se puede llegar lejos… y si es con buena música de fondo, ¡mejor!"]
-    
+    subtitle:
+      "🎶🧉Mate, música y mil líneas de código (o bugs, depende el día).🎶🧉",
+    description: [
+      "¡Hola! Soy Adriana Brandan, tengo 35 años y soy de Buenos Aires. Estudio Tecnicatura en Programación en la UTN de Avellaneda y, desde que arranqué en este mundo, no paré de explorar.",
+      "Hice cursos como Full Stack Python (Codo a Codo) y Full Stack con React y Node.js (Academia Numen), y siempre que puedo me meto en algún nuevo curso para seguir descubriendo qué camino quiero tomar. Hoy por hoy, el front-end me viene llamando fuerte: me gusta ver cómo el código cobra vida en pantalla.",
+      "También experimenté con análisis de datos en Python (Pandas, Seaborn, NumPy) y apps de escritorio con Tkinter y CustomTkinter. Aunque todavía no tengo experiencia en el mundo IT, tengo muchas ganas de arrancar, meter manos en proyectos reales y seguir aprendiendo de colegas, mentores y la comunidad.",
+      "Soy de las que creen que con actitud, constancia y buena onda se puede llegar lejos… y si es con buena música de fondo, ¡mejor!",
+    ],
   },
 };
-
 
 const skillsText = {
   en: {
     title: "My Skills",
     subtitle: "🎸 Evolving with attitude. 🚀",
-    
   },
   es: {
     title: "Mis Habilidades",
     subtitle: "🎸 Evolucionando con actitud. 🚀",
-    
   },
 };
-
 
 const proyectText = {
   en: {
     title: "My Projects",
     subtitle: "💼💡 Design, logic, and a little bit of magic. ✨",
-    
   },
   es: {
     title: "Mis Proyectos",
     subtitle: "💼💡 Diseño, lógica y un poco de magia. ✨",
-    
   },
 };
+const experienceText = {
+  en: {
+    title: "Education & Training",
+    sub: "📚Growing through code and learning from every mistake.📚",
+  },
+  es: {
+    title: "Estudios y Formación",
+    sub: "📚Creciendo con el código y aprendiendo de cada error.📚",
+  },
+};
+
 
 const testimonials = [
   {
@@ -332,22 +339,22 @@ const socialImgs = [
   {
     name: "github",
     imgPath: "images/github.png",
-    url:"https://github.com/AdriBrandy"
+    url: "https://github.com/AdriBrandy",
   },
   {
     name: "mail",
     imgPath: "/images/mail.png",
-    url: "mailto:adriana_brandan22@outlook.com"
+    url: "mailto:adriana_brandan22@outlook.com",
   },
   {
     name: "what",
     imgPath: "/images/whatsapp.png",
-    url: "https://wa.me/5491164258475?text=Hola%20Brandy%2C%20vi%20tu%20portfolio%20y%20me%20encant%C3%B3.%20%C2%BFPodemos%20hablar%3F"
+    url: "https://wa.me/5491164258475?text=Hola%20Brandy%2C%20vi%20tu%20portfolio%20y%20me%20encant%C3%B3.%20%C2%BFPodemos%20hablar%3F",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
-    url: "https://www.linkedin.com/in/adriana-brandan/"
+    url: "https://www.linkedin.com/in/adriana-brandan/",
   },
 ];
 const translations = {
@@ -375,7 +382,7 @@ const projectsinfo = [
     },
     repo: "https://github.com/AdriBrandy/Calculadora",
     demo: "https://youtube.com/shorts/Ld3l0-aFr9A?feature=share",
-    className:"w-full h-full object-cover"
+    className: "w-full h-full object-cover",
   },
   {
     id: 2,
@@ -390,8 +397,7 @@ const projectsinfo = [
     },
     repo: "https://github.com/AdriBrandy/TP-Inventario",
     demo: "https://youtu.be/QETirvhsqfs",
-    className:"w-full h-full object-cover",
-   
+    className: "w-full h-full object-cover",
   },
   {
     id: 3,
@@ -402,31 +408,30 @@ const projectsinfo = [
     },
     description: {
       es: "Aplicación web de e-commerce. Frontend: ReactJS + TailwindCSS, Backend: Node.js + Express, Base de datos: MongoDB (con Mongoose), Control de estado: Context API, Deploy: Vercel (frontend) + Render (backend/API) ",
-      en: "Web e-commerce application. Frontend: ReactJS + TailwindCSS, Backend: Node.js + Express, Database: MongoDB (with Mongoose),State management: Context API, Deployment: Vercel (frontend) + Render (backend/API)"   },
+      en: "Web e-commerce application. Frontend: ReactJS + TailwindCSS, Backend: Node.js + Express, Database: MongoDB (with Mongoose),State management: Context API, Deployment: Vercel (frontend) + Render (backend/API)",
+    },
     repo: "https://github.com/AdriBrandy/frontend-ecommerce",
-    demo: "https://youtu.be/dr3UT7qaRLA",
-    className:"w-full h-full object-cover",
+    demo: "https://frontend-ecommerce-beta-ten.vercel.app/",
+    className: "w-full h-full object-cover",
   },
-  // {
-  //   id: 4,
-  //   imgPath: "/images/inventario-portada.png",
-  //   title: {
-  //     es: "Inventario hecho con Tkinter",
-  //     en: "Inventory built with Tkinter.",
-  //   },
-  //   description: {
-  //     es: "App de escritorio, CRUD conectado a una Base de Datos en MySQL",
-  //     en: "Desktop app with CRUD functionality connected to a MySQL database.",
-  //   },
-  //   repo: "https://github.com/AdriBrandy/TP-Inventario",
-  //   demo: "https://youtu.be/QETirvhsqfs",
-  //   className:"w-full h-full object-cover",
-  // },
+  {
+    id: 4,
+    imgPath: "/images/pokeapi-portada.png",
+    title: {
+      es: "Explorador Pokémon Full Stack",
+      en: "Full Stack Pokémon Explorer",
+    },
+    description: {
+      es: "Aplicación full stack desarrollada con React, Tailwind CSS y Node.js, que permite buscar, filtrar y visualizar información de los primeros 151 Pokémon consumiendo la PokeAPI. Incluye autenticación de usuarios, diseño responsivo y uso eficiente de Context API.",
+      en: "Full stack application built with React, Tailwind CSS, and Node.js that allows users to search, filter, and view information about the first 151 Pokémon using the PokeAPI. Features user authentication, responsive design, and efficient use of the Context API.",
+    },
+    repo: "https://github.com/AdriBrandy/PokeApi",
+    demo: "https://poke-api-zqum.vercel.app/",
+    className: "w-full h-full object-cover",
+  },
+
   // Agregás más proyectos igual
 ];
-
-
-
 
 export {
   words,
@@ -438,11 +443,12 @@ export {
   aboutmeText,
   skillsText,
   proyectText,
-  testimonials,
+  experienceText,
   socialImgs,
   techStackIcons,
   techStackImgs,
   navLinks,
   translations,
   projectsinfo,
+  testimonials
 };

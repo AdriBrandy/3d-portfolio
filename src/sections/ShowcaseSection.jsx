@@ -41,24 +41,24 @@ const AppShowcase = ({ language = "es" }) => {
   }, []);
 
   return (
-    <section id="work" ref={sectionRef} className="app-showcase scroll-mt-32">
+    <section id="work" ref={sectionRef} className="app-showcase scroll-mt-32 ">
       <div className="w-full">
         <TitleHeader
           sub={proyectText[idioma].subtitle}
           title={proyectText[idioma].title}
         />
-        <div className="showcaselayout mt-5">
+        <div className="showcaselayout mt-5  ">
           {proyectos.map((pro, i) => (
             <div
               key={pro.id}
               className="project-list-wrapper overflow-hidden"
               ref={(el) => (cardsRefs.current[i] = el)}
             >
-              <div className="image-wrapper bg-[#FFEFDB] h-64  overflow-hidden ">
+              <div className="hover:bg-violet-200 image-wrapper bg-[#FFEFDB] max-h-50   overflow-hidden ">
                 <img
                   src={pro.imgPath}
                   alt={pro.title[language]}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain "
                 />
               </div>
               <div className="text-content">

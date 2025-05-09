@@ -17,9 +17,9 @@ const App = () => {
       <NavBar setLanguage={setLanguage} language={language} />
       <Hero language={language} />
       <AboutMe language={language}/>
+      {/* <Experience language={language}/> */}
       <SkillsSection language={language} />
       <ShowcaseSection language={language}/>
-      {/* <Experience /> */}
       {/* <Testimonials /> */}
       <Contact language={language} />
       <Footer language={language} />
